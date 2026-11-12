@@ -1,6 +1,5 @@
 from data_provider.data_factory import data_provider, get_info
 from exp.exp_basic import Exp_Basic
-from teacher.build import build_teacher, load_teacher_cache
 from utils.augmentation import choose_scale, time_scale
 from utils.losses import GuidanceLoss
 from utils.tools import EarlyStopping, set_seed
@@ -25,6 +24,9 @@ class Exp_Long_Term_Forecast(Exp_Basic):
         super(Exp_Long_Term_Forecast, self).__init__(args)
 
     def _prepare_teacher(self, args):
+        # Imported here so that testing a trained student needs no teacher code
+        # (Optuna, CatBoost) and is not touched by its global settings.
+        from teacher.build import build_teacher, load_teacher_cache
         info = get_info(args)
         cache = load_teacher_cache(info, args)
         if cache is None:

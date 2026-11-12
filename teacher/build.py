@@ -74,6 +74,10 @@ def teacher_dir(args):
     name = '{}_sl{}_pl{}'.format(os.path.splitext(args.data_path)[0], args.seq_len, args.pred_len)
     if args.percent != 100:
         name += '_p{}'.format(args.percent)
+    elif not args.teacher_residual:
+        name += '_ridge'
+    if args.teacher_max_lookback != 2048:
+        name += '_L{}'.format(args.teacher_max_lookback)
     return os.path.join(args.teacher_path, name)
 
 

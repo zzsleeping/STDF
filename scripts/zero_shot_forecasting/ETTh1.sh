@@ -28,6 +28,7 @@ python run.py \
     --rob_w 0.4 \
     --seed 2021 \
     --itr 3 \
+    --des zero_shot \
     --model $model \
     --time_scale_aug 1 \
     --zero_shot 1 \

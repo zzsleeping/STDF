@@ -29,6 +29,7 @@ python run.py \
     --rob_w 0.4 \
     --seed 2021 \
     --itr 3 \
+    --des few_shot \
     --model $model \
     --percent $percent
 

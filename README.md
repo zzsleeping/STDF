@@ -118,10 +118,10 @@ The student is trained on the source dataset with time-scale augmentation (`--ti
 
 ### Post-Training
 
-- Trained models will be saved in `./checkpoints`.
+- Trained models will be saved in `./checkpoints`. The run name contains `--des`, which the scripts set to `long_term`, `few_shot` or `zero_shot`; give ablation runs their own `--des` so that they do not overwrite these checkpoints.
 - Numerical results are available in `.npy` format under `./results`.
 - Detailed summaries of performance metrics can be found in `./result_long_term_forecast.txt`.
-- The teacher's selected configuration and standalone accuracy are recorded in `./teacher_cache/<dataset>_sl<L>_pl<H>/metadata.json`.
+- The teacher's selected configuration and standalone accuracy are recorded in `./teacher_cache/<dataset>_sl<L>_pl<H>/metadata.json`. Ridge-only and short-history teachers are cached in separate folders (`..._ridge`, `..._L96`).
 
 ### Ablation Switches
 
