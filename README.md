@@ -165,7 +165,7 @@ scripts/                             long-term, few-shot and zero-shot scripts
 
 Our gratitude extends to the authors of the following repositories:
 
-- [CALF](https://github.com/Hank0626/CALF): this code base, the numerical interface and the GPT-2 wrapper are built on CALF.
-- [SearchCast](https://github.com/SakanaAI/SearchCast): the standardizer, Ridge solver and search wrapper of the teacher (`teacher/searchcast_ridge.py`, Apache-2.0). We fix the variable-group size, confine the configuration search to the training interval, and score all candidates on the same folds.
+- [CALF](https://github.com/Hank0626/CALF)
+- [SearchCast](https://github.com/SakanaAI/SearchCast)
 - [Time-Series-Library](https://github.com/thuml/Time-Series-Library)
 - [Autoformer](https://github.com/thuml/Autoformer)
