@@ -63,7 +63,7 @@ def load_pca_memory(path, components, width):
 
 
 class Model(nn.Module):
-    """STGF student: LoRA-adapted GPT-2 forecaster with a frozen memory interface.
+    """STDF student: LoRA-adapted GPT-2 forecaster with a frozen memory interface.
 
     No teacher is loaded or executed here.  Teacher guidance only enters
     through the training loss, so the checkpoint alone is enough at inference.

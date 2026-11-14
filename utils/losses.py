@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 
 class GuidanceLoss(nn.Module):
-    """STGF training objective (Eq. 6).
+    """STDF training objective (Eq. 6).
 
         L = MAE_B(S, Y) + lambda * MSE_{B_T}(S, sg(T)) + beta * MAE_{B_T}(S, sg(T))
 

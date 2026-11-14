@@ -1,4 +1,4 @@
-"""History-adaptive base forecaster of the STGF statistical teacher.
+"""History-adaptive base forecaster of the STDF statistical teacher.
 
 Channels are split, in their original order, into consecutive groups of at most
 ``series_group`` variables and the horizon into contiguous ``forecast_group``

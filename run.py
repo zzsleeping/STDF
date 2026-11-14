@@ -4,14 +4,14 @@ from exp.exp_long_term_forecasting import Exp_Long_Term_Forecast
 from utils.print_args import print_args
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='STGF')
+    parser = argparse.ArgumentParser(description='STDF')
 
     # basic config
     parser.add_argument('--task_name', type=str, default='long_term_forecast',
                         help='task name, options:[long_term_forecast]')
     parser.add_argument('--is_training', type=int, required=True, default=1, help='status')
     parser.add_argument('--model_id', type=str, required=True, default='test', help='model id')
-    parser.add_argument('--model', type=str, default='STGF', help='model name, options: [STGF]')
+    parser.add_argument('--model', type=str, default='STDF', help='model name, options: [STDF]')
 
     # data loader
     parser.add_argument('--data', type=str, required=True, default='ETTh1',

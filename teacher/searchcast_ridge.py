@@ -3,7 +3,7 @@
 This file is a subset of ``optuna_ridge.py`` from SearchCast
 (Huang, Xu and Darlow, "How Good Can Linear Models Be for Time-Series
 Forecasting?", https://github.com/SakanaAI/SearchCast), licensed under the
-Apache License, Version 2.0.  Changes for STGF: the command-line entry point,
+Apache License, Version 2.0.  Changes for STDF: the command-line entry point,
 the global-baseline search and the plotting/reporting utilities were removed,
 together with the imports only they needed.  The scalers, augmentations, Ridge
 solver, windowing helpers and the single-objective search wrapper below are

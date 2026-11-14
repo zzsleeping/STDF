@@ -1,12 +1,12 @@
 import torch
-from models import STGF
+from models import STDF
 
 
 class Exp_Basic(object):
     def __init__(self, args):
         self.args = args
         self.model_dict = {
-            "STGF": STGF,
+            "STDF": STDF,
         }
         self.device = self._acquire_device()
         self.model = self._build_model().to(self.device)
